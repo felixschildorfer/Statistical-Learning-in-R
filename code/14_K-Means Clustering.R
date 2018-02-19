@@ -2,7 +2,7 @@
 set.seed(34)
 x <- matrix(rnorm(100*2),100,2)
 x_mean <- matrix(rnorm(8,sd=4),4,2)
-which <- sample(1:4,100,replace=T)
+which <- sample(1:4, 100, replace = T)
 x <- x + x_mean[which,]
 plot(x,col=which,pch=19)
 
